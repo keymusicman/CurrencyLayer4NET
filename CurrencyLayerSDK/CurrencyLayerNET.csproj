@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1FF57F5E-F4E4-4B8C-8FF2-DB5A826F4DE9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CurrencyLayerSDK</RootNamespace>
+    <AssemblyName>CurrencyLayerSDK</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CLClient.cs" />
+    <Compile Include="CLManager.cs" />
+    <Compile Include="Entities\HistoricalQuote.cs" />
+    <Compile Include="Entities\Response\CLConvertInfo.cs" />
+    <Compile Include="Entities\Response\CLConvertQuery.cs" />
+    <Compile Include="Entities\Response\CLConvertResponse.cs" />
+    <Compile Include="Entities\Response\CLCurrenciesResponse.cs" />
+    <Compile Include="Entities\Response\CLCurrencyChange.cs" />
+    <Compile Include="Entities\Response\CLCurrencyChangeResponse.cs" />
+    <Compile Include="Entities\Response\CLError.cs" />
+    <Compile Include="Entities\Response\CLQuotesResponse.cs" />
+    <Compile Include="Entities\Response\CLResponse.cs" />
+    <Compile Include="Entities\Currency.cs" />
+    <Compile Include="Entities\Quote.cs" />
+    <Compile Include="Entities\Response\CLTimeFrameResponse.cs" />
+    <Compile Include="Exceptions\CLException.cs" />
+    <Compile Include="Extensions\CLResponseExtensions.cs" />
+    <Compile Include="Extensions\RequestExtensions.cs" />
+    <Compile Include="ICLClient.cs" />
+    <Compile Include="ICLManager.cs" />
+    <Compile Include="Infrastructure\Endpoints.cs" />
+    <Compile Include="Infrastructure\Execution\IRequestPolicy.cs" />
+    <Compile Include="Infrastructure\Execution\SimpleRequestPolicy.cs" />
+    <Compile Include="Infrastructure\GlobalConfiguration.cs" />
+    <Compile Include="Infrastructure\CLManagerSettings.cs" />
+    <Compile Include="Infrastructure\Query\QueryBuilder.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
