@@ -2,29 +2,29 @@
 
 **License** [![Apache 2](http://img.shields.io/badge/license-Apache%202-brightgreen.svg)](http://www.apache.org/licenses/LICENSE-2.0) <br/>
 
-CurrencyLayer4NET is a .NET library that makes it easier to do API calls to CurrencyLayer.com.
+CurrencyLayer4NET is a .NET library that makes it easier to do API calls to [CurrencyLayer.com](https://currencylayer.com).
 
 # Using CurrencyLayer4NET
 CurrencyLayer4NET provides 3 different levels of how you can make CurrencyLayer API calls: [CLClient](#CLClient), [CLManager](#CLManager), [CLQueryBuilder](#CLQueryBuilder). Here's summary of what's supported on every level:
 
-| Endpoint/Feature 				 		| CLClient 				| CLManager 			| CLQueryBuilder 		|
-|---------------------------------------|   :---:  				|   :---:   			|     :---:      		|
-| Currencies List				 		|:white_check_mark:		|:white_check_mark:		|:white_check_mark:		|
-| Real-time Rates  				 		|:white_check_mark:		|:white_check_mark:		|:white_check_mark:		|
-| Historical Rates 				 		|:white_check_mark:		|:white_check_mark:		|:white_check_mark:		|
-| Specify Output Currencies 	 		|:white_check_mark:		|:white_check_mark:		|:white_check_mark:		|
-| Source Currency Switching (*)	 		|:white_check_mark: 	|:white_check_mark:		|:white_check_mark:		|
-| Currency Conversion (*)		 		|:x: 					|:white_check_mark:		|:white_check_mark:		|
-| Historical Currency Conversion (*) 	|:x: 					|:white_check_mark:		|:white_check_mark:		|
-| Time-Frame Queries (*)		 		|:x:					|:white_check_mark:		|:white_check_mark:		|
-| Currency-Change Queries (*)	 		|:x: 					|:white_check_mark:		|:white_check_mark:		|
-| JSON Formatting  				 		|:white_check_mark:(**)	|:white_check_mark:(**)	|:white_check_mark:(**)	|
-| JSONP Callback   				 		|:x:					|:x:					|:white_check_mark:		|
-| 256-bit HTTPS Encryption (*)	 		|:white_check_mark:(**) |:white_check_mark:(**)	|:white_check_mark:(**)	|
-| Requests/Responses logging			|:white_check_mark:(**) |:white_check_mark:(**)	|:white_check_mark:(**)	|
+| Endpoint/Feature 				 		| CLClient 			| CLManager 		| CLQueryBuilder 	|
+|---------------------------------------|   :---:  			|   :---:   		|     :---:      	|
+| Currencies List				 		|:white_check_mark:	|:white_check_mark:	|:white_check_mark:	|
+| Real-time Rates  				 		|:white_check_mark:	|:white_check_mark:	|:white_check_mark:	|
+| Historical Rates 				 		|:white_check_mark:	|:white_check_mark:	|:white_check_mark:	|
+| Specify Output Currencies 	 		|:white_check_mark:	|:white_check_mark:	|:white_check_mark:	|
+| Source Currency Switching (*)	 		|:white_check_mark: |:white_check_mark:	|:white_check_mark:	|
+| Currency Conversion (*)		 		|:x: 				|:white_check_mark:	|:white_check_mark:	|
+| Historical Currency Conversion (*) 	|:x: 				|:white_check_mark:	|:white_check_mark:	|
+| Time-Frame Queries (*)		 		|:x:				|:white_check_mark:	|:white_check_mark:	|
+| Currency-Change Queries (*)	 		|:x: 				|:white_check_mark:	|:white_check_mark:	|
+| JSON Formatting (**)			 		|:white_check_mark:	|:white_check_mark:	|:white_check_mark:	|
+| JSONP Callback   				 		|:x:				|:x:				|:white_check_mark:	|
+| 256-bit HTTPS Encryption (*) (**)		|:white_check_mark: |:white_check_mark: |:white_check_mark:	|
+| Requests/Responses logging (**)		|:white_check_mark:	|:white_check_mark:	|:white_check_mark:	|
 
-	_* - note that this feature availability depends on your CurrencyLayer subscription plan_
-	_** - available via GlobalConfiguration.Settings_
+	* - note that this feature availability depends on your CurrencyLayer subscription plan
+	** - available via GlobalConfiguration.Settings
 
 ## CLClient
 This is high-level class that operates its own entities like `Currency`, `Quote`, etc. For example, getting all currencies looks like that:
@@ -103,7 +103,7 @@ string response = CLQueryBuilder.
 # Running Tests
 
 In order to run Unit Tests you should perform the following simple steps:
-- If you do not have a [CurrencyLayer](CurrencyLayer.com) account, sign up. If you already have the account, sign in.
+- If you do not have a [CurrencyLayer](https://currencylayer.com) account, sign up. If you already have the account, sign in.
 - You will need an API Access Key. You can find it on your [Dashboard](https://currencylayer.com/dashboard).
 - Open `CurrencyLayerNET.Tests.TestConfiguration` class.
 - Replace `ApiAccessKey` property value to your API Access Key.
