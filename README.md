@@ -108,7 +108,7 @@ In order to run Unit Tests you should perform the following simple steps:
 - Open `CurrencyLayerNET.Tests.TestConfiguration` class.
 - Replace `ApiAccessKey` property value to your API Access Key.
 - Replace `Plan` enum property value to the corresponding Plan of your CurrencyLayer subscription plan. Example:
-```
+```cs
 public static string ApiAccessKey { get; set; } = "b69242edc1d371e395060d3f414870d2";
 public static Plan Plan { get; set; } = Plan.Professional;
 ```
