@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CurrencyLayerSDK</RootNamespace>
-    <AssemblyName>CurrencyLayerSDK</AssemblyName>
+    <AssemblyName>CurrencyLayer4NET</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
