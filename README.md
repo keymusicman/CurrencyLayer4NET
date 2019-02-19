@@ -1,8 +1,17 @@
 # CurrencyLayer4NET: A .NET library for CurrencyLayer API
 
-**License** [![Apache 2](http://img.shields.io/badge/license-Apache%202-brightgreen.svg)](http://www.apache.org/licenses/LICENSE-2.0) <br/>
+[![NuGet](https://img.shields.io/nuget/v/CurrencyLayer4NET.svg?maxAge=3600)](https://www.nuget.org/packages/CurrencyLayer4NET/) 
+[![Apache 2](http://img.shields.io/badge/license-Apache%202-brightgreen.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+<br/>
 
 CurrencyLayer4NET is a .NET library that makes it easier to do API calls to [CurrencyLayer.com](https://currencylayer.com).
+
+# Installation
+CurrencyLayer4NET is available on NuGet. Use the package manager console in Visual Studio to install it:
+
+```
+Install-Package CurrencyLayer4NET
+```
 
 # Using CurrencyLayer4NET
 CurrencyLayer4NET provides 3 different levels of how you can make CurrencyLayer API calls: [CLClient](#CLClient), [CLManager](#CLManager), [CLQueryBuilder](#CLQueryBuilder). Here's summary of what's supported on every level:
