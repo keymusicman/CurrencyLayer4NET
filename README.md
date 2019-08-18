@@ -6,6 +6,11 @@
 
 CurrencyLayer4NET is a .NET library that makes it easier to do API calls to [CurrencyLayer.com](https://currencylayer.com).
 
+# .NET Support
+CurrencyLayer4NET supports .NET 4.6.1 and higher, .NET Core 2.2 and .NET Standard 2.0
+
+If you need another framework support, please [open a new issue for it](https://github.com/keymusicman/CurrencyLayer4NET/issues/new)
+
 # Installation
 CurrencyLayer4NET is available on NuGet. Use the package manager console in Visual Studio to install it:
 
