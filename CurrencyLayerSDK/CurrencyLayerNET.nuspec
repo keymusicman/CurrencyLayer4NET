@@ -1,17 +1,26 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
+    <id>CurrencyLayer4NET</id>
+    <version>2.0.0</version>
+    <title>CurrencyLayer4NET</title>
+    <authors>Vasilij Maleev</authors>
+    <owners>Tecom LLC</owners>
     <license type="expression">Apache-2.0</license>
     <projectUrl>https://github.com/keymusicman/CurrencyLayer4NET</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
-    <releaseNotes>.NET library that makes it easier to do API calls to CurrencyLayer.com</releaseNotes>
-    <copyright>Copyright 2019</copyright>
+    <description>The assembly provides SDK for currencylayer.com API</description>
+	<summary>SDK for currencylayer.com API</summary>
+    <releaseNotes>Added support for .NET Core 2.2 and .NET Standard 2.0</releaseNotes>
+    <copyright>All rights reserved © 2018 Tecom LLC</copyright>
+	<repository type="git" url="https://github.com/keymusicman/CurrencyLayer4NET" />
     <tags>currency currencylayer exchangerate finance conversion</tags>
+    <dependencies>
+	  <dependency id="Newtonsoft.Json" version="12.0.2" />
+	</dependencies>
   </metadata>
+  <files>
+    <file src="bin\**" target="lib/{framework name}[{version}]" />
+	<file src="currency_layer.png" target="Content\images\package.icons" />
+  </files>
 </package>
