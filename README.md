@@ -1,6 +1,7 @@
 # CurrencyLayer4NET: A .NET library for CurrencyLayer API
 
-[![NuGet](https://img.shields.io/nuget/v/CurrencyLayer4NET.svg?maxAge=3600)](https://www.nuget.org/packages/CurrencyLayer4NET/) 
+[![NuGet](https://img.shields.io/nuget/v/CurrencyLayer4NET)](https://www.nuget.org/packages/CurrencyLayer4NET/) 
+[![Downloads](https://img.shields.io/nuget/dt/CurrencyLayer4NET)](https://www.nuget.org/packages/CurrencyLayer4NET/)
 [![Apache 2](http://img.shields.io/badge/license-Apache%202-brightgreen.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 <br/>
 
