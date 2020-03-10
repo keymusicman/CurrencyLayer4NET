@@ -18,7 +18,6 @@ namespace CurrencyLayer4NET.Infrastructure.Query
         #region Static
         public static CLQueryBuilder Create(string endpoint) => new CLQueryBuilder(endpoint);
 
-        private static JsonSerializer _Serializer = new JsonSerializer();
         private static HttpClient _httpClient = new HttpClient();
         #endregion
 
@@ -110,7 +109,7 @@ namespace CurrencyLayer4NET.Infrastructure.Query
         {
             CreateParametersIfNull();
 
-            mParameters.AddDate("end_date", date);
+            mParameters.AddStartDate(date);
 
             return this;
         }
@@ -119,7 +118,7 @@ namespace CurrencyLayer4NET.Infrastructure.Query
         {
             CreateParametersIfNull();
 
-            mParameters.AddDate("start_date", date);
+            mParameters.AddEndDate(date);
 
             return this;
         }
@@ -227,6 +226,16 @@ namespace CurrencyLayer4NET.Infrastructure.Query
             {
                 Debug.Write("Error while logging. " + e);
             }
+        }
+
+        public class KnownParameters
+        {
+            public const string AccessKey = "access_key";
+            public const string SourceCurrency = "source";
+            public const string Currencies = "currencies";
+            public const string Date = "date";
+            public const string StartDate = "start_date";
+            public const string EndDate = "end_date";
         }
     }
 }

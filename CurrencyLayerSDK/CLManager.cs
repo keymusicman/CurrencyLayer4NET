@@ -189,8 +189,8 @@ namespace CurrencyLayer4NET
         {
             Dictionary<string, string> parameters = new Dictionary<string, string>();
 
-            parameters.AddDate("start_date", startDate);
-            parameters.AddDate("end_date", startDate);
+            parameters.AddStartDate(startDate);
+            parameters.AddEndDate(startDate);
             parameters.AddCurrencies(currencies);
             parameters.AddSourceCurrency(sourceCurrency);
 
@@ -224,8 +224,8 @@ namespace CurrencyLayer4NET
         {
             Dictionary<string, string> parameters = new Dictionary<string, string>();
 
-            parameters.AddDate("start_date", startDate);
-            parameters.AddDate("end_date", startDate);
+            parameters.AddStartDate(startDate);
+            parameters.AddEndDate(startDate);
             parameters.AddCurrencies(currencies);
             parameters.AddSourceCurrency(sourceCurrency);
 

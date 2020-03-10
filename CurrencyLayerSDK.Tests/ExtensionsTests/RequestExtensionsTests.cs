@@ -47,12 +47,21 @@ namespace CurrencyLayer4NET.Tests.ExtensionsTests
         }
 
         [TestMethod]
-        public void AddDateNamed_Test()
+        public void AddStartDateTest()
         {
-            parameters.AddDate("test_date", new DateTime(2011, 05, 15));
+            parameters.AddStartDate(new DateTime(2011, 05, 15));
 
-            Assert.IsTrue(parameters.ContainsKey("test_date"));
-            Assert.AreEqual("2011-05-15", parameters["test_date"]);
+            Assert.IsTrue(parameters.ContainsKey("start_date"));
+            Assert.AreEqual("2011-05-15", parameters["start_date"]);
+        }
+
+        [TestMethod]
+        public void AddEndDateTest()
+        {
+            parameters.AddEndDate(new DateTime(2011, 05, 15));
+
+            Assert.IsTrue(parameters.ContainsKey("end_date"));
+            Assert.AreEqual("2011-05-15", parameters["end_date"]);
         }
     }
 }
